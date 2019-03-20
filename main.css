@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800");
+
+
+
 /*Start global*/
 *{
     margin: 0;
@@ -7,7 +12,7 @@
 
 html {
     font-size: 9px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #eee;
 }
 
@@ -20,6 +25,7 @@ body {
 
 section {
     padding: 6rem 0;
+    overflow: hidden;
 }
 
 a {
@@ -125,7 +131,12 @@ li {
 }
 
 .nav-link {
-    font-family: 'The Historia Demo', sans-serif;
+    /* font-family: 'The Historia Demo', sans-serif; */
+    font-family: ‘the_historia_demo’, 'Open Sans';
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Open Sans', sans-serif; */
+
     font-size: 5rem;
     padding: 1rem;
 }
@@ -201,8 +212,11 @@ li {
 }
 
 .landing-text h1 {
-    font-size: 20rem;
-    font-family: 'The Historia Demo', sans-serif;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 10rem;
+    font-weight: 300;
+    letter-spacing: 0.0375em;
+    /* line-height: 2; */
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -324,6 +338,11 @@ li {
 .portfolio-img {
     width: 50rem;
     flex: 1;
+}
+
+img[src='images/video_demo_1.gif'] {
+    transform:scale(0.8);
+
 }
 
 .portfolio-description {
@@ -524,14 +543,6 @@ input[type="submit"]:hover {
         background-size: cover;
     }
 
-    .landing-text h1 {
-        font-size: 15rem;
-    }
-
-    .landing-text h6 {
-        font-size: 1.7rem;
-    }
-
     .nav-list {
         flex-direction: column;
     }
@@ -572,13 +583,9 @@ input[type="submit"]:hover {
     .timeline ul {
         margin: 0 0 0 auto;
     }
-/* 
-    .timeline .date::before {
-        left: -20rem;
-    } */
 
     .timeline .date::after {
-        left: -5.2rem;
+        left: -3.25rem;
     }
 }
 
@@ -589,7 +596,7 @@ input[type="submit"]:hover {
     }
 
     .landing-text h1 {
-        font-size: 8rem;
+        font-size: 5rem;
     }
 
     .landing-text h6 {
@@ -603,9 +610,24 @@ input[type="submit"]:hover {
     .about .container {
         flex-direction: column;
     }
-
+    
     .profile-img {
         margin: 0 0 7rem 0;
+    }
+
+    .portfolio .section-heading {
+        margin: 0;
+        margin-bottom: -10rem;
+    }
+
+    img[src='images/video_demo_1.gif'],
+    img[src='images/ai-car-simulation.gif'],
+    img[src='images/demo-android.png'] {
+        transform:scale(0.6);
+    }
+
+    .portfolio-img:first-of-type {
+        margin-bottom: -10rem;
     }
 
     .portfolio-item {
@@ -622,13 +644,21 @@ input[type="submit"]:hover {
         order: 2;
     }
 
+    .portfolio-description:last-of-type {
+        margin-top: 10rem;
+    }
+
+    .timeline {
+        margin-left: 0%;
+    }
+
     .timeline p {
         font-size: 1.6rem;
     }
 
     .timeline .date::before {
         font-size: 1.4rem;
-        left: -15rem;
+        left: -12rem;
     }
 
     form {
