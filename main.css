@@ -263,6 +263,10 @@ li {
     flex: 1;
 }
 
+.about-details .view-more {
+    color: rgba(255, 255, 255, .2)
+}
+
 .social-media {
     margin-top: 5rem;
 
@@ -624,6 +628,10 @@ input[type="submit"]:hover {
     img[src='images/ai-car-simulation.gif'],
     img[src='images/demo-android.png'] {
         transform:scale(0.6);
+    }
+
+    img[src='images/video_demo_1.gif'] {
+        margin-bottom: -10rem;
     }
 
     .portfolio-img:first-of-type {
