@@ -336,11 +336,6 @@ li {
     margin-bottom: 15rem;
 }
 
-.first-portfolio-item {
-    margin-top: -8rem;
-    margin-bottom: 5rem;
-}
-
 .portfolio-item:last-child {
     margin-bottom: 0;
 }
@@ -356,6 +351,9 @@ li {
 
 .wrapper {
     position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
 }
 
 .wrapper:hover .des {
@@ -376,7 +374,6 @@ img[src='images/demo-android.png']:hover {
     font-size: 2rem;
     color: #fff;
     text-align: center;
-    /* background: #16162d; */
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -385,7 +382,8 @@ img[src='images/demo-android.png']:hover {
 
 img[src='images/video_demo_1.gif'],
 img[src='images/video_demo_1_alt.png'] {
-    transform:scale(0.8);
+    width: 35rem;
+    height: auto;
 }
 
 .portfolio-description {
@@ -624,6 +622,12 @@ input[type="submit"]:hover {
         font-size: 4rem;
     }
 
+    img[src='images/video_demo_1.gif'],
+    img[src='images/video_demo_1_alt.png'] {
+        width: 30rem;
+        height: auto;
+    }
+
     .timeline {
         margin-left: 0%;
     }
@@ -666,29 +670,26 @@ input[type="submit"]:hover {
     .about {
         margin-bottom: 15rem;
     }
-
-    .portfolio .section-heading {
-        margin: 0;
-        margin-bottom: -10rem;
-    }
-
-    img[src='images/video_demo_1.gif'],
-    img[src='images/ai-car-simulation.gif'],
-    img[src='images/demo-android.png'] {
-        transform:scale(0.6);
-    }
-
-    img[src='images/video_demo_1.gif'] {
-        margin-bottom: -10rem;
-    }
-
-    .portfolio-img:first-of-type {
-        margin-bottom: -10rem;
-    }
-
+    
     .portfolio-item {
         flex-direction: column;
         margin-bottom: 10rem;
+    }
+
+    img[src='images/video_demo_1.gif'],
+    img[src='images/video_demo_1_alt.png'] {
+        width: 30rem;
+        height: auto;
+    }
+
+    img[src='images/demo-android.png'],
+    img[src='images/ai-car-simulation.gif'] {
+        width: 33rem;
+        height: auto;
+    }
+
+    .des {
+        font-size: 1.5rem;
     }
 
     .portfolio-img {
@@ -697,12 +698,8 @@ input[type="submit"]:hover {
     }
 
     .portfolio-description {
-        margin: 0;
+        margin: 5rem auto;
         order: 2;
-    }
-
-    .portfolio-description:last-of-type {
-        margin-top: 10rem;
     }
 
     .timeline {
