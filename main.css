@@ -353,6 +353,8 @@ li {
     position: relative;
     width: fit-content;
     margin: 0 auto !important;
+    text-align: center;
+    justify-content: center;
     display: block;
 }
 
