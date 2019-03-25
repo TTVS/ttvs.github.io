@@ -352,7 +352,7 @@ li {
 .wrapper {
     position: relative;
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto !important;
     display: block;
 }
 
